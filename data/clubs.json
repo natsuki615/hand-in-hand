@@ -1,0 +1,131 @@
+[
+  {
+    "id": "ai-club",
+    "name": "AI Club at CMU",
+    "category": "Technical",
+    "tags": ["artificial intelligence", "machine learning", "deep learning", "neural networks", "workshops", "research"],
+    "description": "Brings together students interested in AI and ML through workshops, speaker events, project teams, and research reading groups.",
+    "website": "https://www.aiclub.cmu.edu",
+    "contactEmail": "aiclub@andrew.cmu.edu"
+  },
+  {
+    "id": "robotics-club",
+    "name": "Roboclub",
+    "category": "Technical",
+    "tags": ["robotics", "hardware", "programming", "automation", "engineering", "competitions"],
+    "description": "Builds and competes with robots. Works on everything from small autonomous vehicles to full-scale battle bots and drone systems.",
+    "website": "https://roboclub.org",
+    "contactEmail": "robotics@andrew.cmu.edu"
+  },
+  {
+    "id": "scottylabs",
+    "name": "ScottyLabs",
+    "category": "Technical",
+    "tags": ["hackathon", "web development", "software", "open source", "community", "TartanHacks"],
+    "description": "Student-run org that builds tools for CMU and organizes TartanHacks, CMU's annual hackathon. Great for builders who want to ship real projects.",
+    "website": "https://scottylabs.org",
+    "contactEmail": "hello@scottylabs.org"
+  },
+  {
+    "id": "wics",
+    "name": "Women in Computer Science (WiCS)",
+    "category": "Community",
+    "tags": ["computer science", "community", "mentorship", "diversity", "networking", "software", "career"],
+    "description": "Supports women and gender minorities in CS at CMU through mentorship programs, industry events, workshops, and community building.",
+    "website": "https://www.wics.cs.cmu.edu",
+    "contactEmail": "wics@andrew.cmu.edu"
+  },
+  {
+    "id": "dfa",
+    "name": "Design for America",
+    "category": "Design / Social Impact",
+    "tags": ["design", "social impact", "human-centered design", "community", "product design", "UX", "problem solving"],
+    "description": "Uses human-centered design to address local and social challenges. Works with community partners on real-world design projects.",
+    "website": "https://designforamerica.com",
+    "contactEmail": "dfa@andrew.cmu.edu"
+  },
+  {
+    "id": "hackcmu",
+    "name": "HackCMU",
+    "category": "Technical",
+    "tags": ["hackathon", "software", "programming", "projects", "collaboration", "web development", "mobile"],
+    "description": "Organizes CMU's student-run hackathon. Open to all skill levels — a great way to build something in 24 hours and meet other builders.",
+    "website": "https://hackcmu.org",
+    "contactEmail": "hackcmu@andrew.cmu.edu"
+  },
+  {
+    "id": "entrepreneurship-club",
+    "name": "CMU Entrepreneurship Club",
+    "category": "Business / Entrepreneurship",
+    "tags": ["entrepreneurship", "startups", "business", "venture capital", "product", "networking", "innovation"],
+    "description": "Connects aspiring entrepreneurs with mentors, investors, and resources. Hosts pitch competitions, speaker panels, and startup workshops.",
+    "website": "https://cmuec.org",
+    "contactEmail": "cmuec@andrew.cmu.edu"
+  },
+  {
+    "id": "acm",
+    "name": "CMU ACM Chapter",
+    "category": "Technical",
+    "tags": ["computer science", "algorithms", "competitive programming", "software", "technical interviews", "career"],
+    "description": "CMU's chapter of the Association for Computing Machinery. Hosts competitive programming contests, technical workshops, and career prep events.",
+    "website": "https://acm.andrew.cmu.edu",
+    "contactEmail": "acm@andrew.cmu.edu"
+  },
+  {
+    "id": "data-science-club",
+    "name": "Data Science Club",
+    "category": "Technical",
+    "tags": ["data science", "machine learning", "statistics", "Python", "data visualization", "analytics", "research"],
+    "description": "Explores data science through projects, workshops, and Kaggle competitions. Open to all levels from beginners to experienced practitioners.",
+    "contactEmail": "datascienceclub@andrew.cmu.edu"
+  },
+  {
+    "id": "swe",
+    "name": "Society of Women Engineers (SWE)",
+    "category": "Community",
+    "tags": ["engineering", "diversity", "mentorship", "community", "career", "networking", "leadership"],
+    "description": "Supports women in engineering through professional development, mentorship, outreach, and building a supportive community at CMU.",
+    "website": "https://www.cmuswe.org",
+    "contactEmail": "swe@andrew.cmu.edu"
+  },
+  {
+    "id": "environmental-club",
+    "name": "CMU Environmental Coalition",
+    "category": "Social Impact",
+    "tags": ["environment", "sustainability", "climate", "policy", "activism", "green energy", "social impact"],
+    "description": "Advocates for environmental sustainability on campus and beyond. Organizes policy discussions, sustainability projects, and climate action events.",
+    "contactEmail": "enviro@andrew.cmu.edu"
+  },
+  {
+    "id": "prism",
+    "name": "PRISM (CS + Social Good)",
+    "category": "Social Impact",
+    "tags": ["social good", "technology", "policy", "ethics", "AI ethics", "community", "social impact", "computer science"],
+    "description": "Explores the intersection of computing and social impact. Works on projects and discussions around tech policy, AI ethics, and using CS for good.",
+    "contactEmail": "prism@andrew.cmu.edu"
+  },
+  {
+    "id": "tartan-racing",
+    "name": "Tartan Racing",
+    "category": "Technical",
+    "tags": ["autonomous vehicles", "robotics", "self-driving", "engineering", "machine learning", "sensors"],
+    "description": "CMU's autonomous vehicle team. Works on self-driving car technology and competes in national autonomous vehicle challenges.",
+    "website": "https://tartanracing.org"
+  },
+  {
+    "id": "cmu-hci-group",
+    "name": "CMU HCI Student Group",
+    "category": "Technical / Design",
+    "tags": ["human-computer interaction", "HCI", "UX", "design", "user research", "accessibility", "prototyping"],
+    "description": "Community for students interested in HCI, UX research, and design. Shares resources, hosts design critiques, and connects students with HCI faculty.",
+    "contactEmail": "hcigroup@andrew.cmu.edu"
+  },
+  {
+    "id": "cmu-finance",
+    "name": "CMU Finance Club",
+    "category": "Business",
+    "tags": ["finance", "investment", "economics", "business", "quantitative finance", "Wall Street", "portfolio management"],
+    "description": "Covers investment banking, quantitative finance, and financial markets through workshops, case studies, and industry speaker events.",
+    "contactEmail": "finance@andrew.cmu.edu"
+  }
+]
