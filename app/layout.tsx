@@ -25,7 +25,7 @@ const cantarell = Cantarell({
 });
 
 export const metadata: Metadata = {
-  title: "CMU Connect",
+  title: "Hand in Hand",
   description: "Find faculty, labs, and student organizations at CMU that match your interests.",
 };
 
