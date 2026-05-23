@@ -14364,7 +14364,7 @@
       "interactive statistics",
       "nonparametric inference"
     ],
-    "bio": "<span>Aaditya's research spans theory, algorithms, and applications in machine learning and statistical inference. One line of recent work focuses on the theme of reproducibility in science and technology (multiple hypothesis testing, selective inference) by designing new algorithms for controlling false discoveries in static and dynamic settings. Another line of work involves active sequential ex",
+    "bio": "Aaditya's research spans theory, algorithms, and applications in machine learning and statistical inference. One line of recent work focuses on the theme of reproducibility in science and technology (multiple hypothesis testing, selective inference) by designing new algorithms for controlling false discoveries in static and dynamic settings.",
     "openTo": [
       "research",
       "mentorship"
@@ -14383,7 +14383,7 @@
       "trustworthy machine learning",
       "physical sciences"
     ],
-    "bio": "<span>Ann&amp;#8217;s research interests are in developing machine learning methodology for complex data and problems in the physical sciences. She is particularly interested in trustworthy scientific inference and uncertainty quantification with generative models, and in bridging classical statistics and machine learning for simulation-based inference and experimental design. Her recent work incl",
+    "bio": "Ann's research interests are in developing machine learning methodology for complex data and problems in the physical sciences. She is particularly interested in trustworthy scientific inference and uncertainty quantification with generative models, and in bridging classical statistics and machine learning for simulation-based inference and experimental design.",
     "openTo": [
       "research",
       "mentorship"
@@ -14402,7 +14402,7 @@
       "gaussian processes",
       "priors with domain knowledge"
     ],
-    "bio": "<span>Dr. Montgomery works on the application of data mining and statistical analysis to solve marketing problems. His research has focused on developing price and promotional strategies from purchase transaction data and the analysis of clickstream data to predict consumer behavior in online environments.</span>",
+    "bio": "Dr. Montgomery works on the application of data mining and statistical analysis to solve marketing problems. His research has focused on developing price and promotional strategies from purchase transaction data and the analysis of clickstream data to predict consumer behavior in online environments.",
     "openTo": [
       "research",
       "mentorship"
@@ -14417,34 +14417,14 @@
     "department": "Machine Learning Department",
     "school": "School of Computer Science",
     "researchAreas": [
-      "f",
-      "o",
-      "r",
-      "e",
-      "c",
-      "a",
-      "s",
-      "t",
-      "i",
-      "n",
-      "g",
-      " ",
-      "e",
-      "p",
-      "i",
-      "d",
-      "e",
-      "m",
-      "i",
-      "c",
-      "s"
+      "epidemics forecasting"
     ],
-    "bio": "<span>Dr. Rosenfeld&amp;#8217;s ML-related work focuses on modeling the evolution of viral epidemics. He uses machine learning, large scale simulations, network analysis and stochastic process theory to try to answer research questions such as:</span><br/><span>&amp;#160;&amp;#160;1. How, and to what extent, can the evolution of infectious diseases like Influenza be predicted?</span><br/><span>&am",
+    "bio": "Dr. Rosenfeld does ML-related work focuses on modeling the evolution of viral epidemics. He uses machine learning, large scale simulations, network analysis and stochastic process theory to try to answer research questions such as how, and to what extent, can the evolution of infectious diseases like Influenza be predicted?",
     "openTo": [
       "research",
       "mentorship"
     ],
-    "email": "",
+    "email": "roni@cs.cmu.edu",
     "url": "https://www.ml.cmu.edu/people/bio/roni-rosenfeld/",
     "id": "rosenfeld-r"
   },
@@ -41022,7 +41002,7 @@
     "email": "rwlodars@andrew.cmu.edu",
     "url": "",
     "id": "wlodarski-r"
-  }
+  },
   {
     "name": "Akari Asai",
     "title": "Assistant Professor",

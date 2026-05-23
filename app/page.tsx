@@ -4,10 +4,29 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 const CONNECTION_TYPES = [
-  { id: 'research', label: 'Research opportunities', description: 'Work in a faculty lab' },
-  { id: 'mentorship', label: 'Mentorship', description: 'Guidance from faculty or senior students' },
-  { id: 'projects', label: 'Project collaboration', description: 'Find teammates or advisors for projects' },
-  { id: 'clubs', label: 'Clubs & organizations', description: 'Join student orgs and activities' },
+  { 
+    id: 'research', 
+    label: 'Research opportunities', 
+    description: 'Work in a faculty lab',
+    shapePath: 'M63.0989 5.13669C39.0989 10.5663 15.4845 22.5055 7.21681 34.6367C-1.05086 46.7679 -2.40111 64.82 7.21681 75.5528C27.6669 98.3734 118.94 99.0016 144.099 94.1367C175.599 88.0457 194.599 83.1367 217.956 64.82C245.719 43.048 231.525 14.9361 194.599 5.1367C168.629 -1.75516 87.0989 -0.292896 63.0989 5.13669Z'
+  },
+  { id: 'mentorship', 
+    label: 'Mentorship', 
+    description: 'Guidance from faculty or senior students',
+    shapePath: 'M75.1814 1.04449C36.7962 3.00365 19.3386 14.1055 15.4079 19.4116C4.15806 28.9353 -11.5918 60.1571 15.4079 74.8508C42.4076 89.5445 97.7382 93.8508 122 93.8508C143.687 94.6671 187.271 91.5036 218.5 74.8508C249.729 58.1979 218.5 19.4117 180 9.35076C153.942 2.54126 113.566 -0.914665 75.1814 1.04449Z'
+  },
+  { 
+    id: 'projects', 
+    label: 'Project collaboration', 
+    description: 'Find teammates or advisors for projects',
+    shapePath: 'M88.2271 1.89945C49.5368 7.07183 27.7271 10.8994 6.49941 38.2664C-4.77295 52.7988 1.58767 72.323 11.2307 80.3754C31.0033 96.8867 65.5792 105.399 92.7271 105.399C133.997 105.399 172.711 103.986 205.727 86.3995C238.743 68.8134 247.084 39.1978 211.128 20.594C182.727 5.89944 125.801 -3.12374 88.2271 1.89945Z'
+  },
+  { 
+    id: 'clubs', 
+    label: 'Clubs & organizations', 
+    description: 'Join student orgs and activities',
+    shapePath: 'M75.8898 1.76753C56.0326 4.41119 25.9671 9.2151 10.1833 27.2675C-5.60043 45.32 0.500222 69.8296 10.1833 77.8821C44.8898 106.744 104.629 110.768 131.89 110.768C170.741 110.768 207.89 104.268 227.89 77.8821C244.188 56.3805 235.586 30.4053 208.39 18.7675C182.116 7.52406 113.62 -3.25563 75.8898 1.76753Z'
+  },
 ];
 
 export default function HomePage() {
@@ -32,18 +51,26 @@ export default function HomePage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#F8F7F6]">
-      <div className="bg-[#C41230] text-white px-6 py-4">
-        <div className="max-w-3xl mx-auto flex items-center gap-3">
+    <main className="min-h-screen bg-[#F7F4D5]">
+      <div className="relative w-full overflow-hidden">
+        <svg
+          viewBox="0 0 1311 120"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-24"
+          preserveAspectRatio="none"
+        >
+          <path d="M159.727 78.5C91.5759 68.935 31.2265 29.8333 1.22655 0.5H1309.23C1289.23 40.1 1234.73 54.5 1209.23 54.5C1171.73 54.5 1155.38 78.3651 1122.73 92.5C1061.5 119 1013.23 119 967.227 119C932.227 119 902.227 109.5 838.227 101.5C774.227 93.5 725.227 95.5 691.227 101.5C664.637 106.192 601.727 119 553.727 119C498.645 119 431.727 111.5 401.727 101.5C377.727 93.5 338.727 84.5 273.227 84.5C256.227 84.5 216.727 86.5 159.727 78.5Z" fill="#0A3323" stroke="#0A3323"/>
+        </svg>
+        <div className="absolute top-0 left-0 px-6 py-4 max-w-3xl mx-auto w-full flex items-center gap-3">
           <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
-            <span className="text-[#C41230] font-bold text-sm">C</span>
+            <span className="text-[#0A3323] font-bold text-sm">C</span>
           </div>
-          <span className="font-semibold text-lg">CMU Connect</span>
+          <span className="font-semibold text-lg text-white">CMU Connect</span>
         </div>
       </div>
 
-      <div className="max-w-3xl mx-auto px-6 pt-16 pb-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-3">
+      <div className="max-w-5xl mx-auto px-6 pt-10 pb-6">
+        <h1 className="text-4xl text-[#0A3323] mb-3 font-[family-name:var(--font-galindo)]">
           Find your people at CMU
         </h1>
         <p className="text-lg text-gray-500">
@@ -51,52 +78,55 @@ export default function HomePage() {
         </p>
       </div>
 
-      <div className="max-w-3xl mx-auto px-6 pb-20">
-        <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 space-y-8">
+      <div className="max-w-5xl mx-auto px-6 pb-10">
+        <form onSubmit={handleSubmit} className="bg-[#A2BE6C] rounded-2xl p-8">
+          <div className="flex gap-6 mb-6">
 
-          <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
-              What are you interested in?
-            </label>
-            <textarea
-              value={interests}
-              onChange={e => setInterests(e.target.value)}
-              rows={3}
-              placeholder="e.g. machine learning, robotics, climate change, social impact, UX design, entrepreneurship..."
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#C41230] focus:border-transparent resize-none"
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-3">
-              What are you looking for?{' '}
-              <span className="font-normal text-gray-400">select all that apply</span>
-            </label>
-            <div className="grid grid-cols-2 gap-3">
-              {CONNECTION_TYPES.map(type => (
-                <button
-                  key={type.id}
-                  type="button"
-                  onClick={() => toggleType(type.id)}
-                  className={`text-left p-4 rounded-xl border-2 transition-all ${
-                    selectedTypes.includes(type.id)
-                      ? 'border-[#C41230] bg-red-50'
-                      : 'border-gray-200 hover:border-gray-300 bg-white'
-                  }`}
-                >
-                  <div className={`text-sm font-semibold ${selectedTypes.includes(type.id) ? 'text-[#C41230]' : 'text-gray-800'}`}>
-                    {type.label}
-                  </div>
-                  <div className="text-xs text-gray-400 mt-1">{type.description}</div>
-                </button>
-              ))}
+            {/* left: text input */}
+            <div className="flex-1 flex flex-col">
+              <label className="block text-base font-semibold text-[#0A3323] mb-2">
+                What are you interested in?
+              </label>
+              <textarea
+                value={interests}
+                onChange={e => setInterests(e.target.value)}
+                placeholder="e.g. machine learning, robotics, climate change, social impact, design, entrepreneurship..."
+                className="flex-1 min-h-84 border border-[#F7F4D5] rounded-xl px-4 py-3 text-[#F7F4D5] placeholder-[#F7F4D5] focus:outline-none focus:ring-2 focus:ring-[#105666] focus:border-transparent resize-none"
+              />
             </div>
+
+            {/* right: connection type cards */}
+            <div className="w-90 flex flex-col">
+              <label className="block text-base font-semibold text-[#0A3323] mb-2">
+                What are you looking for?{' '}
+                <span className="font-normal text-sm text-[#F7F4D5]">select all that apply</span>
+              </label>
+              <div className="grid grid-cols-2 gap-3 content-start">
+                {CONNECTION_TYPES.map(type => {
+                  const selected = selectedTypes.includes(type.id);
+                  return (
+                    <button
+                      key={type.id}
+                      type="button"
+                      onClick={() => toggleType(type.id)}
+                      className={`text-left px-5 py-4 rounded-xl transition-colors duration-200 ${selected ? 'bg-[#105666]' : 'bg-[#F7F4D5]'}`}
+                    >
+                      <div className={`text-sm font-semibold ${selected ? 'text-[#eba69b]' : 'text-gray-800'}`}>
+                        {type.label}
+                      </div>
+                      <div className={`text-xs mt-1 ${selected ? 'text-[#eba69b]/70' : 'text-gray-400'}`}>{type.description}</div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
           </div>
 
           <button
             type="submit"
             disabled={!interests.trim()}
-            className="w-full bg-[#C41230] text-white py-3 px-6 rounded-xl font-semibold text-base hover:bg-[#a00f28] transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+            className="w-full bg-[#F7F4D5] text-[#0A3323] py-3 px-6 rounded-xl font-semibold text-base hover:bg-[#105666] hover:text-[#eba69b] transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
           >
             Find connections
           </button>

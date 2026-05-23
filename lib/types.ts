@@ -21,6 +21,19 @@ export interface Club {
   contactEmail?: string;
 }
 
+export interface Student {
+  id: string;
+  name: string;
+  level: 'phd' | 'masters';
+  program: string;
+  department: string;
+  school: string;
+  researchInterests: string[];
+  bio: string;
+  email: string;
+  url: string;
+}
+
 export interface MatchResult<T> {
   item: T;
   score: number;

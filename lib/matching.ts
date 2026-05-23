@@ -1,4 +1,4 @@
-import type { Faculty, Club, MatchResult } from './types';
+import type { Faculty, Club, Student, MatchResult } from './types';
 
 function normalize(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
@@ -41,10 +41,31 @@ export function matchClubs(
   interests: string,
   clubs: Club[]
 ): MatchResult<Club>[] {
+  const normInterests = normalize(interests);
+  const interestWords = words(interests);
+  const required = Math.max(1, Math.ceil(interestWords.length * 0.6));
   return clubs
     .map(c => {
-      const matchedOn = c.tags.filter(tag => tagMatchesInterests(tag, interests));
-      return { item: c, score: matchedOn.length, matchedOn };
+      const clubText = normalize(c.name + ' ' + c.description + ' ' + c.tags.join(' '));
+      // Bonus if the whole phrase (or a multi-word chunk) appears verbatim
+      const phraseBonus = normInterests.length > 3 && clubText.includes(normInterests) ? 3 : 0;
+      const matchedWords = interestWords.filter(w => clubText.includes(w));
+      const score = matchedWords.length + phraseBonus;
+      return { item: c, score, matchedOn: matchedWords };
+    })
+    .filter(r => r.matchedOn.length >= required)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 12);
+}
+
+export function matchStudents(
+  interests: string,
+  students: Student[]
+): MatchResult<Student>[] {
+  return students
+    .map(s => {
+      const matchedOn = s.researchInterests.filter(tag => tagMatchesInterests(tag, interests));
+      return { item: s, score: matchedOn.length, matchedOn };
     })
     .filter(r => r.score > 0)
     .sort((a, b) => b.score - a.score)

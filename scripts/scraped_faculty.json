@@ -14417,34 +14417,14 @@
     "department": "Machine Learning Department",
     "school": "School of Computer Science",
     "researchAreas": [
-      "f",
-      "o",
-      "r",
-      "e",
-      "c",
-      "a",
-      "s",
-      "t",
-      "i",
-      "n",
-      "g",
-      " ",
-      "e",
-      "p",
-      "i",
-      "d",
-      "e",
-      "m",
-      "i",
-      "c",
-      "s"
+      "epidemics forecasting"
     ],
-    "bio": "<span>Dr. Rosenfeld&amp;#8217;s ML-related work focuses on modeling the evolution of viral epidemics. He uses machine learning, large scale simulations, network analysis and stochastic process theory to try to answer research questions such as:</span><br/><span>&amp;#160;&amp;#160;1. How, and to what extent, can the evolution of infectious diseases like Influenza be predicted?</span><br/><span>&am",
+    "bio": "Dr. Rosenfeld does ML-related work focuses on modeling the evolution of viral epidemics. He uses machine learning, large scale simulations, network analysis and stochastic process theory to try to answer research questions such as how, and to what extent, can the evolution of infectious diseases like Influenza be predicted?",
     "openTo": [
       "research",
       "mentorship"
     ],
-    "email": "",
+    "email": "roni@cs.cmu.edu",
     "url": "https://www.ml.cmu.edu/people/bio/roni-rosenfeld/",
     "id": "rosenfeld-r"
   },
