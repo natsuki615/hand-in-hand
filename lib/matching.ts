@@ -4,8 +4,10 @@ function normalize(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
+const SHORT_TERMS = new Set(['ux', 'ui', 'ai', 'ml', 'vr', 'ar', 'xr', 'cs', 'ee', 'db']);
+
 function words(s: string): string[] {
-  return normalize(s).split(' ').filter(w => w.length > 2);
+  return normalize(s).split(' ').filter(w => w.length > 2 || SHORT_TERMS.has(w));
 }
 
 function tagMatchesInterests(tag: string, interestText: string): boolean {

@@ -95,6 +95,17 @@ export default function HomePage() {
                 What are you looking for?{' '}
                 <span className="font-normal text-sm text-[#F7F4D5]">select all that apply</span>
               </label>
+              <button
+                type="button"
+                onClick={() =>
+                  selectedTypes.length === CONNECTION_TYPES.length
+                    ? setSelectedTypes([])
+                    : setSelectedTypes(CONNECTION_TYPES.map(t => t.id))
+                }
+                className="text-xs text-[#0A3323]/60 hover:text-[#0A3323] transition-colors mb-2 text-left"
+              >
+                {selectedTypes.length === CONNECTION_TYPES.length ? 'Deselect all' : 'Select all'}
+              </button>
               <div className="grid grid-cols-2 gap-3 content-start">
                 {CONNECTION_TYPES.map(type => {
                   const selected = selectedTypes.includes(type.id);
