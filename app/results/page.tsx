@@ -151,12 +151,6 @@ function ResultsContent() {
         >
           <path d="M159.727 78.5C91.5759 68.935 31.2265 29.8333 1.22655 0.5H1309.23C1289.23 40.1 1234.73 54.5 1209.23 54.5C1171.73 54.5 1155.38 78.3651 1122.73 92.5C1061.5 119 1013.23 119 967.227 119C932.227 119 902.227 109.5 838.227 101.5C774.227 93.5 725.227 95.5 691.227 101.5C664.637 106.192 601.727 119 553.727 119C498.645 119 431.727 111.5 401.727 101.5C377.727 93.5 338.727 84.5 273.227 84.5C256.227 84.5 216.727 86.5 159.727 78.5Z" fill="#0A3323" stroke="#0A3323"/>
         </svg>
-        <div className="absolute top-0 left-0 px-6 py-4 max-w-4xl mx-auto w-full flex items-center gap-3">
-          <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
-            <span className="text-[#0A3323] font-bold text-sm">C</span>
-          </div>
-          <span className="font-semibold text-lg text-white">CMU Connect</span>
-        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 py-10">
